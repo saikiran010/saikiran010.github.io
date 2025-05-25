@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inventing Good</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 64px auto;
+      padding: 0 24px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 96px;
+      }
+    }
+
+    .image-wrapper {
+      flex-shrink: 0;
+      max-width: 480px;
+      width: 100%;
+      border: 2px solid #4ade80; 
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .image-wrapper img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .content {
+      max-width: 420px;
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 2.25rem;
+      line-height: 1.1;
+      margin: 0 0 16px 0;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.125rem;
+      margin: 0 0 32px 0;
+      max-width: 384px;
+      line-height: 1.5;
+    }
+
+    button {
+      background-color: #4ade80; 
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover,
+    button:focus {
+      background-color: #22c55e; 
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="image-wrapper">
+        <img
+          src="man.jpg"
+          alt="Man relaxing with feet on wooden desk, looking at phone, in office with chalkboard background"
+          width="480"
+          height="360"
+        />
+      </div>
+      <div class="content">
+        <h1>Inventing good to make it better</h1>
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button type="button">Discover More</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
